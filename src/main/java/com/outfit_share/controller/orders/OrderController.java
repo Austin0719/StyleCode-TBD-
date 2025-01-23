@@ -33,9 +33,6 @@ public class OrderController {
 	    public ResponseEntity<String> createECPayOrder(@RequestBody OrdersDTO ordersDTO) {
 	        String htmlForm = ordersService.createECPayOrder(ordersDTO);
 	        return ResponseEntity.ok(htmlForm);
-
-	        
-	        
 	    }
 
 	@PostMapping("/order/add") // 待測試
